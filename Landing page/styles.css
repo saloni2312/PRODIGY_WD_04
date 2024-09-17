@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn, .cart-btn {
+  background-color: white;
+  color: #2874f0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn:hover, .cart-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+.trending, .hot-deals {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.trending-items, .deals-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item, .deal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Increase box width */
+  min-height: 350px; /* Increase box height */
+  text-align: center;
+}
+
+.item img, .deal img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .trending-items, .deals-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero-text {
+      max-width: 100%;
+  }
+
+  .auth-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .login-btn, .cart-btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .item, .deal {
+      max-width: 90%; /* Adjust for mobile */
+  }
+}
